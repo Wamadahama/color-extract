@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pallete</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        .box  {
+            padding: 15px;
+            margin:15px
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        {% for color in color_list %}
+            <div class="col-md-3 box" style="background-color: #{{ color }}"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
